@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 1318" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+  <defs>
+    <marker id="uml-realize" viewBox="0 0 20 14" refX="19" refY="7" markerWidth="16" markerHeight="12" orient="auto-start-reverse">
+      <path d="M1,1 L19,7 L1,13 Z" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.3"/>
+    </marker>
+    <marker id="uml-open-arrow" viewBox="0 0 14 14" refX="12" refY="7" markerWidth="13" markerHeight="13" orient="auto-start-reverse">
+      <path d="M1,1 L12,7 L1,13" fill="none" stroke="#2b2b2b" stroke-width="1.4"/>
+    </marker>
+    <marker id="uml-diamond-filled" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="18" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1"/>
+    </marker>
+    <marker id="uml-diamond-hollow" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="18" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.2"/>
+    </marker>
+    <marker id="act-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,1 L10,6 L1,11 Z" fill="#2b2b2b" stroke="#2b2b2b"/>
+    </marker>
+  </defs>
+<rect x="0" y="0" width="1900" height="1318" fill="#ffffff"/>
+<text x="950.0" y="34" text-anchor="middle" font-size="21" font-weight="bold" fill="#111111">Temperature Monitor - Activity Diagram</text>
+<text x="950.0" y="55" text-anchor="middle" font-size="12.5" fill="#555555">Start-up (one-time) sequence followed by the repeating 100 µs real-time sampling task</text>
+<line x1="70.0" y1="100.0" x2="70.0" y2="1960.0" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4,3"/>
+<rect x="70.0" y="68.0" width="430.0" height="26.0" rx="0" fill="#eef0f3" stroke="#999999" stroke-width="1"/>
+<text x="285.0" y="85.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#333333">Application</text>
+<line x1="540.0" y1="100.0" x2="540.0" y2="1960.0" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4,3"/>
+<rect x="540.0" y="68.0" width="430.0" height="26.0" rx="0" fill="#eef0f3" stroke="#999999" stroke-width="1"/>
+<text x="755.0" y="85.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#333333">Service</text>
+<line x1="1010.0" y1="100.0" x2="1010.0" y2="1960.0" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4,3"/>
+<rect x="1010.0" y="68.0" width="430.0" height="26.0" rx="0" fill="#eef0f3" stroke="#999999" stroke-width="1"/>
+<text x="1225.0" y="85.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#333333">Driver / HAL</text>
+<line x1="1480.0" y1="100.0" x2="1480.0" y2="1960.0" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4,3"/>
+<rect x="1480.0" y="68.0" width="430.0" height="26.0" rx="0" fill="#eef0f3" stroke="#999999" stroke-width="1"/>
+<text x="1695.0" y="85.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#333333">Hardware</text>
+<line x1="1910.0" y1="100.0" x2="1910.0" y2="1960.0" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="4,3"/>
+<circle cx="285.0" cy="140.0" r="10" fill="#111111" stroke="#111111" stroke-width="1.3"/>
+<rect x="85.0" y="170.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="285.0" y="190.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">Initialize GPIO / ADC / I2C</text>
+<text x="285.0" y="206.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">drivers</text>
+<polyline points="285.0,140.0 285.0,170.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="85.0" y="240.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="285.0" y="268.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">Turn all LEDs off</text>
+<polyline points="285.0,218.0 285.0,240.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="555.0" y="240.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="755.0" y="268.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">DeviceConfigManager::loadOnce()</text>
+<polyline points="485.0,264.0 555.0,264.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="530.0" y="253.0" width="40.3" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="532.0" y="264.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">calls</text>
+<rect x="1025.0" y="240.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="1225.0" y="260.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">Eeprom24LC::readBlock()</text>
+<text x="1225.0" y="276.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">-&gt; I2C write+read transaction</text>
+<polyline points="955.0,264.0 1025.0,264.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="1000.0" y="253.0" width="40.3" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1002.0" y="264.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">calls</text>
+<rect x="1495.0" y="240.0" width="400.0" height="48.0" rx="20" fill="#ececec" stroke="#888888" stroke-width="1.5"/>
+<text x="1695.0" y="260.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">Configuration EEPROM</text>
+<text x="1695.0" y="276.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">returns HW revision + serial no.</text>
+<polyline points="1425.0,264.0 1495.0,264.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="1470.0" y="253.0" width="53.2" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1472.0" y="264.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">I2C bus</text>
+<polygon points="755.0,330.0 787.0,362.0 755.0,394.0 723.0,362.0" fill="#fff8dd" stroke="#a97e15" stroke-width="1.5"/>
+<text x="755.0" y="410.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">EEPROM responded?</text>
+<polyline points="755.0,288.0 755.0,330.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="85.0" y="454.0" width="400.0" height="48.0" rx="20" fill="#fbe1df" stroke="#a23b32" stroke-width="1.5"/>
+<text x="285.0" y="474.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">Report fatal error,</text>
+<text x="285.0" y="490.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">do not start sampling</text>
+<polyline points="723.0,362.0 683.0,362.0 285.0,454.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="494.0" y="397.0" width="20.9" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="496.0" y="408.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">no</text>
+<circle cx="285.0" cy="524.0" r="12" fill="#ffffff" stroke="#111111" stroke-width="1.6"/>
+<circle cx="285.0" cy="524.0" r="6" fill="#111111" stroke="#111111" stroke-width="1.3"/>
+<polyline points="285.0,502.0 285.0,524.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="555.0" y="454.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="755.0" y="474.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">select ITemperatureScaler</text>
+<text x="755.0" y="490.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">(Rev-A / Rev-B) from HW revision</text>
+<polyline points="755.0,394.0 755.0,454.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="765.0" y="413.0" width="27.4" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="767.0" y="424.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">yes</text>
+<rect x="1025.0" y="454.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="1225.0" y="474.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">McuTimer::configurePeriodicMicros()</text>
+<text x="1225.0" y="490.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">arm 100 µs period, do not start</text>
+<polyline points="955.0,478.0 1025.0,478.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="1000.0" y="467.0" width="40.3" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1002.0" y="478.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">calls</text>
+<rect x="85.0" y="584.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="285.0" y="612.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">TemperatureMonitorApplication::start()</text>
+<polyline points="755.0,502.0 755.0,543.0 285.0,543.0 285.0,584.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<polyline points="1225.0,502.0 1225.0,543.0 485.0,608.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="1025.0" y="584.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="1225.0" y="612.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">McuTimer::start()  - counter enabled</text>
+<polyline points="485.0,608.0 1025.0,608.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="765.0" y="597.0" width="40.3" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="767.0" y="608.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">calls</text>
+<rect x="85.0" y="664.0" width="400.0" height="8.0" rx="0" fill="#111111" stroke="#111111" stroke-width="1.3"/>
+<text x="285.0" y="656.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">timer interrupt now live - real-time task takes over</text>
+<polyline points="285.0,632.0 285.0,664.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="1050.0" y="364.0" width="380.0" height="64.0" rx="0" fill="#fff8dd" stroke="#b08b1b" stroke-width="1.2"/>
+<polygon points="1416.0,364.0 1430.0,378.0 1416.0,378.0" fill="#fff8dd" stroke="#b08b1b" stroke-width="1.0"/>
+<text x="1060.0" y="383.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">This whole sequence runs once, to completion,</text>
+<text x="1060.0" y="399.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">strictly before the timer is armed - the EEPROM</text>
+<text x="1060.0" y="415.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">read must never happen from inside the ISR.</text>
+<circle cx="285.0" cy="724.0" r="10" fill="#111111" stroke="#111111" stroke-width="1.3"/>
+<text x="301.0" y="728.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">TIM2 update IRQ fires (every 100 µs)</text>
+<rect x="85.0" y="764.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="285.0" y="792.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">Clear timer interrupt flag</text>
+<polyline points="285.0,724.0 285.0,764.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="1025.0" y="764.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="1225.0" y="784.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">McuAdcChannel::readRaw()</text>
+<text x="1225.0" y="800.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">poll EOC, read DR</text>
+<polyline points="485.0,788.0 1025.0,788.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="765.0" y="777.0" width="40.3" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="767.0" y="788.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">calls</text>
+<rect x="1495.0" y="764.0" width="400.0" height="48.0" rx="20" fill="#ececec" stroke="#888888" stroke-width="1.5"/>
+<text x="1695.0" y="792.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">Temperature sensor voltage -&gt; ADC code</text>
+<polyline points="1425.0,788.0 1495.0,788.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="555.0" y="844.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="755.0" y="864.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">scaler-&gt;toDeciCelsius(raw)</text>
+<text x="755.0" y="880.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">convert using cached Rev-A/B factor</text>
+<polyline points="1225.0,812.0 1225.0,868.0 955.0,868.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="555.0" y="914.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="755.0" y="934.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">evaluateNextZone(zone, tempDeciC)</text>
+<text x="755.0" y="950.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">apply +/-1 degC hysteresis</text>
+<polyline points="755.0,892.0 755.0,914.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<polygon points="285.0,1004.0 317.0,1036.0 285.0,1068.0 253.0,1036.0" fill="#fff8dd" stroke="#a97e15" stroke-width="1.5"/>
+<text x="285.0" y="1084.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">zone changed since last sample?</text>
+<polyline points="555.0,938.0 755.0,984.0 285.0,1004.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="85.0" y="1098.0" width="400.0" height="40.0" rx="20" fill="#f4f4f4" stroke="#999999" stroke-width="1.5"/>
+<text x="285.0" y="1122.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">keep current LED state</text>
+<polyline points="253.0,1036.0 223.0,1036.0 223.0,1118.0 85.0,1118.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="164.0" y="1066.0" width="20.9" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="166.0" y="1077.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">no</text>
+<rect x="555.0" y="1118.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="755.0" y="1138.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">LedIndicator::update(zone)</text>
+<text x="755.0" y="1154.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">single active LED, others off</text>
+<polyline points="317.0,1036.0 755.0,1036.0 755.0,1118.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="765.0" y="1066.0" width="27.4" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="767.0" y="1077.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">yes</text>
+<rect x="1025.0" y="1118.0" width="400.0" height="48.0" rx="20" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="1225.0" y="1146.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">McuGpioOutput::set() x3</text>
+<polyline points="955.0,1142.0 1025.0,1142.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="1000.0" y="1131.0" width="40.3" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1002.0" y="1142.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#555555">calls</text>
+<rect x="1495.0" y="1118.0" width="400.0" height="48.0" rx="20" fill="#ececec" stroke="#888888" stroke-width="1.5"/>
+<text x="1695.0" y="1146.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">G / Y / R LED pins driven</text>
+<polyline points="1425.0,1142.0 1495.0,1142.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<circle cx="285.0" cy="1258.0" r="12" fill="#ffffff" stroke="#111111" stroke-width="1.6"/>
+<circle cx="285.0" cy="1258.0" r="6" fill="#111111" stroke="#111111" stroke-width="1.3"/>
+<text x="301.0" y="1262.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">ISR returns - waits for next 100 µs tick</text>
+<polyline points="285.0,1138.0 285.0,1238.0 285.0,1238.0 285.0,1258.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<polyline points="755.0,1166.0 755.0,1238.0 285.0,1238.0 285.0,1258.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<rect x="1050.0" y="834.0" width="380.0" height="64.0" rx="0" fill="#fff8dd" stroke="#b08b1b" stroke-width="1.2"/>
+<polygon points="1416.0,834.0 1430.0,848.0 1416.0,848.0" fill="#fff8dd" stroke="#b08b1b" stroke-width="1.0"/>
+<text x="1060.0" y="853.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">Nothing in this path blocks or touches a bus -</text>
+<text x="1060.0" y="869.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">the EEPROM is never read again after start-up,</text>
+<text x="1060.0" y="885.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">which is what keeps this loop's jitter low.</text>
+</svg>

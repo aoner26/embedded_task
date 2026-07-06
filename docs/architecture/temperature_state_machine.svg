@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1850 926" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+  <defs>
+    <marker id="uml-realize" viewBox="0 0 20 14" refX="19" refY="7" markerWidth="16" markerHeight="12" orient="auto-start-reverse">
+      <path d="M1,1 L19,7 L1,13 Z" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.3"/>
+    </marker>
+    <marker id="uml-open-arrow" viewBox="0 0 14 14" refX="12" refY="7" markerWidth="13" markerHeight="13" orient="auto-start-reverse">
+      <path d="M1,1 L12,7 L1,13" fill="none" stroke="#2b2b2b" stroke-width="1.4"/>
+    </marker>
+    <marker id="uml-diamond-filled" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="18" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1"/>
+    </marker>
+    <marker id="uml-diamond-hollow" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="18" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.2"/>
+    </marker>
+    <marker id="act-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,1 L10,6 L1,11 Z" fill="#2b2b2b" stroke="#2b2b2b"/>
+    </marker>
+  </defs>
+<rect x="0" y="0" width="1850" height="926" fill="#ffffff"/>
+<text x="925.0" y="34" text-anchor="middle" font-size="21" font-weight="bold" fill="#111111">Temperature Zone - State Machine Diagram</text>
+<text x="925.0" y="55" text-anchor="middle" font-size="12.5" fill="#555555">evaluate_next_zone() / TemperatureMonitor::evaluateNextZone() - one transition per 100 µs sample</text>
+<rect x="60.0" y="300.0" width="320.0" height="130.0" rx="16" fill="#fbe1df" stroke="#a23b32" stroke-width="1.8"/>
+<text x="220.0" y="328.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">CriticalLow</text>
+<line x1="74.0" y1="340.0" x2="366.0" y2="340.0" stroke="#a23b32" stroke-width="1"/>
+<text x="220.0" y="360.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.8" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#333333">entry / red = ON, others = OFF</text>
+<text x="220.0" y="375.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.8" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#333333">&lt; 5.0 °C</text>
+<rect x="530.0" y="300.0" width="320.0" height="130.0" rx="16" fill="#e0f2e9" stroke="#3f8a5f" stroke-width="1.8"/>
+<text x="690.0" y="328.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Normal</text>
+<line x1="544.0" y1="340.0" x2="836.0" y2="340.0" stroke="#3f8a5f" stroke-width="1"/>
+<text x="690.0" y="360.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.8" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#333333">entry / green = ON, others = OFF</text>
+<text x="690.0" y="375.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.8" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#333333">5.0 .. 85.0 °C</text>
+<rect x="1000.0" y="300.0" width="320.0" height="130.0" rx="16" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.8"/>
+<text x="1160.0" y="328.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Warning</text>
+<line x1="1014.0" y1="340.0" x2="1306.0" y2="340.0" stroke="#a97e15" stroke-width="1"/>
+<text x="1160.0" y="360.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.8" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#333333">entry / yellow = ON, others = OFF</text>
+<text x="1160.0" y="375.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.8" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#333333">85.0 .. 105.0 °C</text>
+<rect x="1470.0" y="300.0" width="320.0" height="130.0" rx="16" fill="#fbe1df" stroke="#a23b32" stroke-width="1.8"/>
+<text x="1630.0" y="328.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">CriticalHigh</text>
+<line x1="1484.0" y1="340.0" x2="1776.0" y2="340.0" stroke="#a23b32" stroke-width="1"/>
+<text x="1630.0" y="360.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.8" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#333333">entry / red = ON, others = OFF</text>
+<text x="1630.0" y="375.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.8" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#333333">&gt;= 105.0 °C</text>
+<circle cx="690.0" cy="170.0" r="9" fill="#111111" stroke="#111111" stroke-width="1.3"/>
+<polyline points="690.0,179.0 690.0,300.0" fill="none" stroke="#2b2b2b" stroke-width="1.4" marker-end="url(#act-arrow)"/>
+<text x="704.0" y="200.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">power-on default</text>
+<polyline points="690.0,300.0 925.0,230.0 1160.0,300.0" fill="none" stroke="#33587a" stroke-width="1.5" marker-end="url(#act-arrow)"/>
+<rect x="869.3" y="193.0" width="111.5" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="925.0" y="204.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#33587a">temp &gt;= 85.0 °C</text>
+<rect x="805.0" y="207.0" width="240.0" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="925.0" y="218.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#666666">= 85.0 + 0.0 (nominal, entry edge)</text>
+<polyline points="1160.0,300.0 1395.0,230.0 1630.0,300.0" fill="none" stroke="#33587a" stroke-width="1.5" marker-end="url(#act-arrow)"/>
+<rect x="1335.9" y="193.0" width="118.2" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1395.0" y="204.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#33587a">temp &gt;= 105.0 °C</text>
+<rect x="1271.6" y="207.0" width="246.8" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1395.0" y="218.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#666666">= 105.0 + 0.0 (nominal, entry edge)</text>
+<polyline points="690.0,300.0 455.0,230.0 220.0,300.0" fill="none" stroke="#33587a" stroke-width="1.5" marker-end="url(#act-arrow)"/>
+<rect x="406.0" y="193.0" width="97.9" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="455.0" y="204.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#33587a">temp &lt; 5.0 °C</text>
+<rect x="338.4" y="207.0" width="233.2" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="455.0" y="218.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#666666">= 5.0 - 0.0 (nominal, entry edge)</text>
+<polyline points="1160.0,430.0 925.0,495.0 690.0,430.0" fill="none" stroke="#a23b32" stroke-width="1.5" marker-end="url(#act-arrow)"/>
+<rect x="872.6" y="502.0" width="104.7" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="925.0" y="513.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#a23b32">temp &lt; 84.0 °C</text>
+<rect x="835.4" y="516.0" width="179.1" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="925.0" y="527.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#666666">= 85.0 - 1.0 (hysteresis)</text>
+<polyline points="1630.0,430.0 1395.0,495.0 1160.0,430.0" fill="none" stroke="#a23b32" stroke-width="1.5" marker-end="url(#act-arrow)"/>
+<rect x="1339.3" y="502.0" width="111.5" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1395.0" y="513.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#a23b32">temp &lt; 104.0 °C</text>
+<rect x="1302.1" y="516.0" width="185.9" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1395.0" y="527.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#666666">= 105.0 - 1.0 (hysteresis)</text>
+<polyline points="220.0,430.0 455.0,495.0 690.0,430.0" fill="none" stroke="#a23b32" stroke-width="1.5" marker-end="url(#act-arrow)"/>
+<rect x="402.6" y="502.0" width="104.7" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="455.0" y="513.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#a23b32">temp &gt;= 6.0 °C</text>
+<rect x="368.8" y="516.0" width="172.4" height="15.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="455.0" y="527.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#666666">= 5.0 + 1.0 (hysteresis)</text>
+<text x="220.0" y="416.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#666666">do / hold current LED state</text>
+<text x="690.0" y="416.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#666666">do / hold current LED state</text>
+<text x="1160.0" y="416.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#666666">do / hold current LED state</text>
+<text x="1630.0" y="416.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="9.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#666666">do / hold current LED state</text>
+<line x1="60.0" y1="105.0" x2="94.0" y2="105.0" stroke="#33587a" stroke-width="2"/>
+<text x="102.0" y="109.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">rising edge - enters a more critical zone (pinned to the spec'd threshold, 0 offset)</text>
+<line x1="60.0" y1="127.0" x2="94.0" y2="127.0" stroke="#a23b32" stroke-width="2"/>
+<text x="102.0" y="131.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#a23b32">recovery edge - returns to a less critical zone (offset by the full +/-1.0 degC tolerance)</text>
+<rect x="175.0" y="600.0" width="1500.0" height="144.0" rx="0" fill="#fff8dd" stroke="#b08b1b" stroke-width="1.2"/>
+<polygon points="1661.0,600.0 1675.0,614.0 1661.0,614.0" fill="#fff8dd" stroke="#b08b1b" stroke-width="1.0"/>
+<text x="185.0" y="619.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">The +/-1 degC tolerance (TEMP_HYSTERESIS_TOLERANCE_DECI_C = 10) is applied identically to all three</text>
+<text x="185.0" y="635.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">boundaries (5.0 / 85.0 / 105.0 degC) and to both directions of every one of them - see the table below.</text>
+<text x="185.0" y="651.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">The rising edge of each boundary is pinned to the exact requirement ("warning &gt;= 85 degC", etc.) and so</text>
+<text x="185.0" y="667.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">carries a 0.0 degC offset by construction; shifting it would either delay a safety-critical alarm or</text>
+<text x="185.0" y="683.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">contradict the requirement's literal threshold. The recovery edge is where a reading sitting on the</text>
+<text x="185.0" y="699.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">boundary would otherwise make the LED flicker, so that is where the full 1.0 degC is subtracted/added.</text>
+<text x="185.0" y="715.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">Both edges of every boundary are therefore derived from the exact same nominal-threshold +/- tolerance</text>
+<text x="185.0" y="731.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">formula - the tolerance is used everywhere, it just algebraically simplifies to 0 on the rising edge.</text>
+<rect x="75.0" y="764.0" width="1700.0" height="122.0" rx="0" fill="#ffffff" stroke="#999999" stroke-width="1.2"/>
+<text x="925.0" y="752.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Every boundary gets the same treatment - nominal threshold, tolerance, rising edge, falling edge</text>
+<rect x="75.0" y="764.0" width="1700.0" height="32.0" rx="0" fill="#eef0f3" stroke="#999999" stroke-width="1.2"/>
+<text x="245.0" y="785.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Boundary</text>
+<text x="585.0" y="785.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Nominal threshold</text>
+<text x="874.0" y="785.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Tolerance</text>
+<text x="1188.5" y="785.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Rising edge (entry)</text>
+<text x="1579.5" y="785.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Falling edge (recovery)</text>
+<text x="245.0" y="816.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#222222">Normal &lt;-&gt; Warning</text>
+<text x="585.0" y="816.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#222222">85.0 °C</text>
+<text x="874.0" y="816.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#222222">± 1.0 °C</text>
+<text x="1188.5" y="816.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">temp &gt;= 85.0 °C  (85.0 + 0.0)</text>
+<text x="1579.5" y="816.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#a23b32">temp &lt; 84.0 °C  (85.0 - 1.0)</text>
+<line x1="75.0" y1="826.0" x2="1775.0" y2="826.0" stroke="#dddddd" stroke-width="1"/>
+<text x="245.0" y="846.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#222222">Warning &lt;-&gt; CriticalHigh</text>
+<text x="585.0" y="846.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#222222">105.0 °C</text>
+<text x="874.0" y="846.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#222222">± 1.0 °C</text>
+<text x="1188.5" y="846.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">temp &gt;= 105.0 °C  (105.0 + 0.0)</text>
+<text x="1579.5" y="846.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#a23b32">temp &lt; 104.0 °C  (105.0 - 1.0)</text>
+<line x1="75.0" y1="856.0" x2="1775.0" y2="856.0" stroke="#dddddd" stroke-width="1"/>
+<text x="245.0" y="876.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#222222">Normal &lt;-&gt; CriticalLow</text>
+<text x="585.0" y="876.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#222222">5.0 °C</text>
+<text x="874.0" y="876.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#222222">± 1.0 °C</text>
+<text x="1188.5" y="876.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">temp &lt; 5.0 °C  (5.0 - 0.0)</text>
+<text x="1579.5" y="876.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#a23b32">temp &gt;= 6.0 °C  (5.0 + 1.0)</text>
+<line x1="415.0" y1="764.0" x2="415.0" y2="886.0" stroke="#dddddd" stroke-width="1"/>
+<line x1="755.0" y1="764.0" x2="755.0" y2="886.0" stroke="#dddddd" stroke-width="1"/>
+<line x1="993.0" y1="764.0" x2="993.0" y2="886.0" stroke="#dddddd" stroke-width="1"/>
+<line x1="1384.0" y1="764.0" x2="1384.0" y2="886.0" stroke="#dddddd" stroke-width="1"/>
+</svg>

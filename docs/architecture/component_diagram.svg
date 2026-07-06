@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 1200" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+  <defs>
+    <marker id="uml-realize" viewBox="0 0 20 14" refX="19" refY="7" markerWidth="16" markerHeight="12" orient="auto-start-reverse">
+      <path d="M1,1 L19,7 L1,13 Z" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.3"/>
+    </marker>
+    <marker id="uml-open-arrow" viewBox="0 0 14 14" refX="12" refY="7" markerWidth="13" markerHeight="13" orient="auto-start-reverse">
+      <path d="M1,1 L12,7 L1,13" fill="none" stroke="#2b2b2b" stroke-width="1.4"/>
+    </marker>
+    <marker id="uml-diamond-filled" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="18" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1"/>
+    </marker>
+    <marker id="uml-diamond-hollow" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="18" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.2"/>
+    </marker>
+    <marker id="act-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,1 L10,6 L1,11 Z" fill="#2b2b2b" stroke="#2b2b2b"/>
+    </marker>
+  </defs>
+<rect x="0" y="0" width="1900" height="1200" fill="#ffffff"/>
+<text x="950.0" y="34" text-anchor="middle" font-size="21" font-weight="bold" fill="#111111">Temperature Monitor - Component Diagram</text>
+<text x="950.0" y="55" text-anchor="middle" font-size="12.5" fill="#555555">Applies to both implementations - component names show the C module / C++ class that realizes each one</text>
+<rect x="40.0" y="90.0" width="1615.0" height="150.0" rx="0" fill="#fbfbfc" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="6,3"/>
+<rect x="50.0" y="78.0" width="143.5" height="22.0" rx="0" fill="#f3f3f3" stroke="#aaaaaa" stroke-width="1.2"/>
+<text x="121.7" y="93.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#444444">Application Layer</text>
+<rect x="40.0" y="270.0" width="1615.0" height="150.0" rx="0" fill="#fbfbfc" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="6,3"/>
+<rect x="50.0" y="258.0" width="113.9" height="22.0" rx="0" fill="#f3f3f3" stroke="#aaaaaa" stroke-width="1.2"/>
+<text x="107.0" y="273.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#444444">Service Layer</text>
+<rect x="40.0" y="470.0" width="1615.0" height="320.0" rx="0" fill="#fbfbfc" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="6,3"/>
+<rect x="50.0" y="458.0" width="276.3" height="22.0" rx="0" fill="#f3f3f3" stroke="#aaaaaa" stroke-width="1.2"/>
+<text x="188.2" y="473.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#444444">Driver / Hardware Abstraction Layer</text>
+<rect x="40.0" y="840.0" width="1615.0" height="180.0" rx="0" fill="#fbfbfc" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="6,3"/>
+<rect x="50.0" y="828.0" width="305.8" height="22.0" rx="0" fill="#f3f3f3" stroke="#aaaaaa" stroke-width="1.2"/>
+<text x="202.9" y="843.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#444444">Target Hardware  (real MCU peripherals)</text>
+<rect x="40.0" y="1060.0" width="1615.0" height="150.0" rx="0" fill="#fbfbfc" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="6,3"/>
+<rect x="50.0" y="1048.0" width="313.2" height="22.0" rx="0" fill="#f3f3f3" stroke="#aaaaaa" stroke-width="1.2"/>
+<text x="206.6" y="1063.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#444444">PC Demonstration Build  (platform_sim/*)</text>
+<rect x="607.5" y="120.0" width="500.0" height="74.0" rx="0" fill="#eaf1fb" stroke="#33587a" stroke-width="1.6"/>
+<rect x="1081.5" y="130.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="1081.5" y="143.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="857.5" y="140.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«component»</text>
+<text x="857.5" y="158.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">TemperatureMonitorApplication</text>
+<text x="857.5" y="178.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">app_temp_monitor.c  /  TemperatureMonitorApplication.cpp</text>
+<rect x="90.0" y="300.0" width="300.0" height="74.0" rx="0" fill="#e0f2e9" stroke="#3f8a5f" stroke-width="1.6"/>
+<rect x="364.0" y="310.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="364.0" y="323.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="240.0" y="320.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#3f8a5f">«component»</text>
+<text x="240.0" y="338.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Temperature Service</text>
+<text x="240.0" y="358.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">temperature_service.c  /  TemperatureMonitor.cpp</text>
+<rect x="505.0" y="300.0" width="300.0" height="74.0" rx="0" fill="#e0f2e9" stroke="#3f8a5f" stroke-width="1.6"/>
+<rect x="779.0" y="310.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="779.0" y="323.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="655.0" y="320.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#3f8a5f">«component»</text>
+<text x="655.0" y="338.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">LED Indicator Service</text>
+<text x="655.0" y="358.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">led_indicator_service.c  /  LedIndicator.cpp</text>
+<rect x="920.0" y="300.0" width="300.0" height="74.0" rx="0" fill="#e0f2e9" stroke="#3f8a5f" stroke-width="1.6"/>
+<rect x="1194.0" y="310.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="1194.0" y="323.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="1070.0" y="320.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#3f8a5f">«component»</text>
+<text x="1070.0" y="338.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Device Config Service</text>
+<text x="1070.0" y="358.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">device_config_service.c  /  DeviceConfigManager.cpp</text>
+<rect x="1335.0" y="300.0" width="300.0" height="74.0" rx="0" fill="#e0f2e9" stroke="#3f8a5f" stroke-width="1.6"/>
+<rect x="1609.0" y="310.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="1609.0" y="323.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="1485.0" y="320.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#3f8a5f">«component»</text>
+<text x="1485.0" y="338.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Temperature Scaler Strategy</text>
+<text x="1485.0" y="358.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">deci_c_per_adc_count  /  ITemperatureScaler + Factory</text>
+<rect x="90.0" y="500.0" width="300.0" height="74.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.6"/>
+<rect x="364.0" y="510.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="364.0" y="523.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="240.0" y="520.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#a97e15">«component»</text>
+<text x="240.0" y="538.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">ADC Driver</text>
+<text x="240.0" y="558.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">adc_driver.c  /  McuAdcChannel.cpp</text>
+<rect x="505.0" y="500.0" width="300.0" height="74.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.6"/>
+<rect x="779.0" y="510.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="779.0" y="523.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="655.0" y="520.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#a97e15">«component»</text>
+<text x="655.0" y="538.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">GPIO Driver</text>
+<text x="655.0" y="558.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">gpio_driver.c  /  McuGpioOutput.cpp</text>
+<rect x="920.0" y="500.0" width="300.0" height="74.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.6"/>
+<rect x="1194.0" y="510.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="1194.0" y="523.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="1070.0" y="520.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#a97e15">«component»</text>
+<text x="1070.0" y="538.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">EEPROM Driver</text>
+<text x="1070.0" y="558.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">eeprom_driver.c  /  Eeprom24LC.cpp</text>
+<rect x="1335.0" y="500.0" width="300.0" height="74.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.6"/>
+<rect x="1609.0" y="510.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="1609.0" y="523.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="1485.0" y="520.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#a97e15">«component»</text>
+<text x="1485.0" y="538.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Timer Driver</text>
+<text x="1485.0" y="558.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">timer_driver.c  /  McuTimer.cpp</text>
+<rect x="940.0" y="660.0" width="260.0" height="74.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.6"/>
+<rect x="1174.0" y="670.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="1174.0" y="683.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="1070.0" y="680.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#a97e15">«component»</text>
+<text x="1070.0" y="698.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">I2C Bus Driver</text>
+<text x="1070.0" y="718.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">i2c_driver.c  /  McuI2cBus.cpp</text>
+<rect x="120.0" y="870.0" width="240.0" height="58.0" rx="0" fill="#ececec" stroke="#888888" stroke-width="1.6"/>
+<rect x="334.0" y="880.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="334.0" y="893.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="240.0" y="890.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#888888">«device»</text>
+<text x="240.0" y="908.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Temperature Sensor</text>
+<rect x="535.0" y="870.0" width="240.0" height="58.0" rx="0" fill="#ececec" stroke="#888888" stroke-width="1.6"/>
+<rect x="749.0" y="880.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="749.0" y="893.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="655.0" y="890.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#888888">«device»</text>
+<text x="655.0" y="908.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Status LEDs (G/Y/R)</text>
+<rect x="950.0" y="870.0" width="240.0" height="58.0" rx="0" fill="#ececec" stroke="#888888" stroke-width="1.6"/>
+<rect x="1164.0" y="880.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="1164.0" y="893.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="1070.0" y="890.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#888888">«device»</text>
+<text x="1070.0" y="908.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Configuration EEPROM</text>
+<rect x="1365.0" y="870.0" width="240.0" height="58.0" rx="0" fill="#ececec" stroke="#888888" stroke-width="1.6"/>
+<rect x="1579.0" y="880.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="1579.0" y="893.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="1485.0" y="890.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#888888">«device»</text>
+<text x="1485.0" y="908.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Periodic Timer (100 µs)</text>
+<rect x="527.5" y="1090.0" width="620.0" height="74.0" rx="0" fill="#ececec" stroke="#888888" stroke-width="1.6"/>
+<rect x="1121.5" y="1100.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<rect x="1121.5" y="1113.0" width="14.0" height="9.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.1"/>
+<text x="837.5" y="1110.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#888888">«executable»</text>
+<text x="837.5" y="1128.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Hardware Simulation</text>
+<text x="837.5" y="1148.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">mock_registers.c[pp] + platform_hooks_sim.c[pp]</text>
+<circle cx="390.0" cy="537.0" r="7" fill="#ffffff" stroke="#33587a" stroke-width="1.6"/>
+<text x="403.0" y="541.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#33587a">IAnalogInput</text>
+<circle cx="805.0" cy="537.0" r="7" fill="#ffffff" stroke="#33587a" stroke-width="1.6"/>
+<text x="818.0" y="541.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#33587a">IDigitalOutput</text>
+<circle cx="1220.0" cy="537.0" r="7" fill="#ffffff" stroke="#33587a" stroke-width="1.6"/>
+<text x="1233.0" y="541.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#33587a">INonVolatileStorage</text>
+<circle cx="1635.0" cy="537.0" r="7" fill="#ffffff" stroke="#33587a" stroke-width="1.6"/>
+<text x="1648.0" y="541.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#33587a">ITimer</text>
+<circle cx="1200.0" cy="697.0" r="7" fill="#ffffff" stroke="#33587a" stroke-width="1.6"/>
+<text x="1213.0" y="701.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#33587a">II2cBus</text>
+<circle cx="1635.0" cy="337.0" r="7" fill="#ffffff" stroke="#33587a" stroke-width="1.6"/>
+<text x="1648.0" y="341.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#33587a">ITemperatureScaler</text>
+<polyline points="240.0,374.0 240.0,500.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="655.0,374.0 655.0,500.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="1070.0,374.0 1070.0,500.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="1070.0,574.0 1070.0,660.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="667.5,194.0 390.0,312.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="767.5,194.0 655.0,300.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="947.5,194.0 1070.0,300.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="1047.5,194.0 1335.0,312.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="1107.5,157.0 1635.0,537.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="390.0,362.0 1335.0,362.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="240.0,574.0 240.0,870.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="655.0,574.0 655.0,870.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="1070.0,734.0 1070.0,870.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="1445.0,574.0 1525.0,870.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="240.0,574.0 240.0,595.0 1675.0,595.0 1675.0,1070.0 777.5,1070.0 777.5,1090.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="3,3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="1070.0,734.0 1070.0,759.0 1695.0,759.0 1695.0,1070.0 837.5,1070.0 837.5,1090.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="3,3" marker-end="url(#uml-open-arrow)"/>
+<polyline points="1485.0,574.0 1485.0,625.0 1715.0,625.0 1715.0,1070.0 897.5,1070.0 897.5,1090.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="3,3" marker-end="url(#uml-open-arrow)"/>
+<rect x="60.0" y="114.0" width="380.0" height="80.0" rx="0" fill="#fff8dd" stroke="#b08b1b" stroke-width="1.2"/>
+<polygon points="426.0,114.0 440.0,128.0 426.0,128.0" fill="#fff8dd" stroke="#b08b1b" stroke-width="1.0"/>
+<text x="70.0" y="133.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">Only one of "Target Hardware" or</text>
+<text x="70.0" y="149.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">"PC Demonstration Build" is linked in</text>
+<text x="70.0" y="165.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">at a time - the driver layer is written</text>
+<text x="70.0" y="181.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#5a4300">once and does not change either way.</text>
+</svg>

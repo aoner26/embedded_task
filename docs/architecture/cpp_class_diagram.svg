@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3290.8825 1609" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+
+  <defs>
+    <marker id="uml-realize" viewBox="0 0 20 14" refX="19" refY="7" markerWidth="16" markerHeight="12" orient="auto-start-reverse">
+      <path d="M1,1 L19,7 L1,13 Z" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.3"/>
+    </marker>
+    <marker id="uml-open-arrow" viewBox="0 0 14 14" refX="12" refY="7" markerWidth="13" markerHeight="13" orient="auto-start-reverse">
+      <path d="M1,1 L12,7 L1,13" fill="none" stroke="#2b2b2b" stroke-width="1.4"/>
+    </marker>
+    <marker id="uml-diamond-filled" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="18" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1"/>
+    </marker>
+    <marker id="uml-diamond-hollow" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="18" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.2"/>
+    </marker>
+    <marker id="act-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M1,1 L10,6 L1,11 Z" fill="#2b2b2b" stroke="#2b2b2b"/>
+    </marker>
+  </defs>
+<rect x="0" y="0" width="3290.8825" height="1609" fill="#ffffff"/>
+<text x="1645.44125" y="34" text-anchor="middle" font-size="21" font-weight="bold" fill="#111111">Temperature Monitor - C++ Implementation - Class Diagram</text>
+<text x="1645.44125" y="55" text-anchor="middle" font-size="12.5" fill="#555555">Driver / Service / Application layers - one fixed column per subsystem, so every relationship stays either in-column or in-row and never crosses another class</text>
+<rect x="128.4" y="100.0" width="220.0" height="83.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.5"/>
+<rect x="128.4" y="100.0" width="220.0" height="51.0" rx="0" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="238.4" y="118.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«interface»</text>
+<text x="238.4" y="136.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" xml:space="preserve" fill="#111111">IDigitalOutput</text>
+<line x1="128.4" y1="151.0" x2="348.4" y2="151.0" stroke="#33587a" stroke-width="1.5"/>
+<text x="138.4" y="170.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ set(driveHigh: bool): void</text>
+<rect x="644.4" y="100.0" width="190.0" height="83.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.5"/>
+<rect x="644.4" y="100.0" width="190.0" height="51.0" rx="0" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="739.4" y="118.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«interface»</text>
+<text x="739.4" y="136.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" xml:space="preserve" fill="#111111">IAnalogInput</text>
+<line x1="644.4" y1="151.0" x2="834.4" y2="151.0" stroke="#33587a" stroke-width="1.5"/>
+<text x="654.4" y="170.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ readRaw(): uint16_t</text>
+<rect x="1352.1" y="100.0" width="354.4" height="83.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.5"/>
+<rect x="1352.1" y="100.0" width="354.4" height="51.0" rx="0" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="1529.3" y="118.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«interface»</text>
+<text x="1529.3" y="136.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" xml:space="preserve" fill="#111111">ITemperatureScaler</text>
+<line x1="1352.1" y1="151.0" x2="1706.5" y2="151.0" stroke="#33587a" stroke-width="1.5"/>
+<text x="1362.1" y="170.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ toDeciCelsius(rawAdcCount: uint16_t): int16_t</text>
+<rect x="2106.7" y="100.0" width="319.0" height="115.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.5"/>
+<rect x="2106.7" y="100.0" width="319.0" height="51.0" rx="0" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="2266.2" y="118.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«interface»</text>
+<text x="2266.2" y="136.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" xml:space="preserve" fill="#111111">II2cBus</text>
+<line x1="2106.7" y1="151.0" x2="2425.7" y2="151.0" stroke="#33587a" stroke-width="1.5"/>
+<text x="2116.7" y="170.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ write(slaveAddr7b, txBuf, txLen): bool</text>
+<text x="2116.7" y="186.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ writeThenRead(slaveAddr7b, txBuf, txLen,</text>
+<text x="2116.7" y="202.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       rxBuf, rxLen): bool</text>
+<rect x="2515.7" y="100.0" width="347.3" height="99.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.5"/>
+<rect x="2515.7" y="100.0" width="347.3" height="51.0" rx="0" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="2689.4" y="118.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«interface»</text>
+<text x="2689.4" y="136.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" xml:space="preserve" fill="#111111">INonVolatileStorage</text>
+<line x1="2515.7" y1="151.0" x2="2863.1" y2="151.0" stroke="#33587a" stroke-width="1.5"/>
+<text x="2525.7" y="170.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ readBlock(offset: uint8_t, buffer: uint8_t*,</text>
+<text x="2525.7" y="186.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       length: size_t): bool</text>
+<rect x="2953.1" y="100.0" width="297.8" height="131.0" rx="0" fill="#ffffff" stroke="#33587a" stroke-width="1.5"/>
+<rect x="2953.1" y="100.0" width="297.8" height="51.0" rx="0" fill="#eaf1fb" stroke="#33587a" stroke-width="1.5"/>
+<text x="3102.0" y="118.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«interface»</text>
+<text x="3102.0" y="136.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" xml:space="preserve" fill="#111111">ITimer</text>
+<line x1="2953.1" y1="151.0" x2="3250.9" y2="151.0" stroke="#33587a" stroke-width="1.5"/>
+<text x="2963.1" y="170.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ configurePeriodicMicros(timerClockHz,</text>
+<text x="2963.1" y="186.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       periodUs: uint32_t): void</text>
+<text x="2963.1" y="202.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ start(): void</text>
+<text x="2963.1" y="218.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ clearInterruptFlag(): void</text>
+<rect x="103.7" y="316.0" width="269.5" height="131.0" rx="0" fill="#ffffff" stroke="#a97e15" stroke-width="1.5"/>
+<rect x="103.7" y="316.0" width="269.5" height="35.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="238.4" y="336.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">McuGpioOutput</text>
+<line x1="103.7" y1="351.0" x2="373.2" y2="351.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="113.7" y="370.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_pinNumber: uint8_t</text>
+<line x1="103.7" y1="383.0" x2="373.2" y2="383.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="113.7" y="402.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ McuGpioOutput(pinNumber: uint8_t)</text>
+<text x="113.7" y="418.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ configure(): void</text>
+<text x="113.7" y="434.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ set(driveHigh: bool): void</text>
+<rect x="590.5" y="316.0" width="297.8" height="131.0" rx="0" fill="#ffffff" stroke="#a97e15" stroke-width="1.5"/>
+<rect x="590.5" y="316.0" width="297.8" height="35.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="739.4" y="336.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">McuAdcChannel</text>
+<line x1="590.5" y1="351.0" x2="888.3" y2="351.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="600.5" y="370.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_channelNumber: uint8_t</text>
+<line x1="590.5" y1="383.0" x2="888.3" y2="383.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="600.5" y="402.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ McuAdcChannel(channelNumber: uint8_t)</text>
+<text x="600.5" y="418.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ enable(): void</text>
+<text x="600.5" y="434.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ readRaw(): uint16_t</text>
+<rect x="2113.7" y="316.0" width="304.9" height="195.0" rx="0" fill="#ffffff" stroke="#a97e15" stroke-width="1.5"/>
+<rect x="2113.7" y="316.0" width="304.9" height="35.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="2266.2" y="336.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">McuI2cBus</text>
+<line x1="2113.7" y1="351.0" x2="2418.6" y2="351.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="2123.7" y="370.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ enable(): void</text>
+<text x="2123.7" y="386.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ write(slaveAddr7b, txBuf, txLen): bool</text>
+<text x="2123.7" y="402.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ writeThenRead(slaveAddr7b, txBuf,</text>
+<text x="2123.7" y="418.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       txLen, rxBuf, rxLen): bool</text>
+<text x="2123.7" y="434.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- {static} generateStart/Stop(): void</text>
+<text x="2123.7" y="450.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- {static} addressSlave(addr7b,</text>
+<text x="2123.7" y="466.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       readTransfer): bool</text>
+<text x="2123.7" y="482.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- {static} writeOneByte(byteValue): void</text>
+<text x="2123.7" y="498.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- {static} readOneByte(): uint8_t</text>
+<rect x="2533.4" y="316.0" width="312.0" height="147.0" rx="0" fill="#ffffff" stroke="#a97e15" stroke-width="1.5"/>
+<rect x="2533.4" y="316.0" width="312.0" height="35.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="2689.4" y="336.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Eeprom24LC</text>
+<line x1="2533.4" y1="351.0" x2="2845.4" y2="351.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="2543.4" y="370.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_bus: II2cBus&amp;</text>
+<text x="2543.4" y="386.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_slaveAddress: uint8_t</text>
+<line x1="2533.4" y1="399.0" x2="2845.4" y2="399.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="2543.4" y="418.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ Eeprom24LC(bus: II2cBus&amp;,</text>
+<text x="2543.4" y="434.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       slaveAddress: uint8_t = 0x50)</text>
+<text x="2543.4" y="450.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ readBlock(offset, buffer, length): bool</text>
+<rect x="2970.7" y="316.0" width="262.5" height="115.0" rx="0" fill="#ffffff" stroke="#a97e15" stroke-width="1.5"/>
+<rect x="2970.7" y="316.0" width="262.5" height="35.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="3102.0" y="336.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">McuTimer</text>
+<line x1="2970.7" y1="351.0" x2="3233.2" y2="351.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="2980.7" y="370.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ configurePeriodicMicros(clockHz,</text>
+<text x="2980.7" y="386.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       periodUs: uint32_t): void</text>
+<text x="2980.7" y="402.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ start(): void</text>
+<text x="2980.7" y="418.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ clearInterruptFlag(): void</text>
+<rect x="1042.0" y="316.0" width="283.7" height="99.0" rx="0" fill="#ffffff" stroke="#a97e15" stroke-width="1.5"/>
+<rect x="1042.0" y="316.0" width="283.7" height="35.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="1183.8" y="336.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">RevATemperatureScaler</text>
+<line x1="1042.0" y1="351.0" x2="1325.7" y2="351.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="1052.0" y="370.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ toDeciCelsius(rawAdcCount): int16_t</text>
+<line x1="1042.0" y1="383.0" x2="1325.7" y2="383.0" stroke="#a97e15" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="1052.0" y="402.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">1.0 degC / ADC count</text>
+<rect x="1355.7" y="316.0" width="347.3" height="83.0" rx="0" fill="#ffffff" stroke="#a97e15" stroke-width="1.5"/>
+<rect x="1355.7" y="316.0" width="347.3" height="35.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="1529.3" y="336.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">TemperatureScalerFactory</text>
+<line x1="1355.7" y1="351.0" x2="1703.0" y2="351.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="1365.7" y="370.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ {static} create(revision: HardwareRevision):</text>
+<text x="1365.7" y="386.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       unique_ptr&lt;ITemperatureScaler&gt;</text>
+<rect x="1733.0" y="316.0" width="283.7" height="99.0" rx="0" fill="#ffffff" stroke="#a97e15" stroke-width="1.5"/>
+<rect x="1733.0" y="316.0" width="283.7" height="35.0" rx="0" fill="#fdf2d0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="1874.8" y="336.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">RevBTemperatureScaler</text>
+<line x1="1733.0" y1="351.0" x2="2016.7" y2="351.0" stroke="#a97e15" stroke-width="1.5"/>
+<text x="1743.0" y="370.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ toDeciCelsius(rawAdcCount): int16_t</text>
+<line x1="1733.0" y1="383.0" x2="2016.7" y2="383.0" stroke="#a97e15" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="1743.0" y="402.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.0" text-anchor="start" font-weight="normal" font-style="italic" xml:space="preserve" fill="#555555">0.1 degC / ADC count</text>
+<rect x="644.4" y="596.0" width="190.0" height="131.0" rx="0" fill="#ffffff" stroke="#6d4a9c" stroke-width="1.5"/>
+<rect x="644.4" y="596.0" width="190.0" height="51.0" rx="0" fill="#f1eaf7" stroke="#6d4a9c" stroke-width="1.5"/>
+<text x="739.4" y="614.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«enumeration»</text>
+<text x="739.4" y="632.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">TemperatureZone</text>
+<line x1="644.4" y1="647.0" x2="834.4" y2="647.0" stroke="#6d4a9c" stroke-width="1.5"/>
+<text x="654.4" y="666.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">CriticalLow = 0</text>
+<text x="654.4" y="682.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">Normal</text>
+<text x="654.4" y="698.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">Warning</text>
+<text x="654.4" y="714.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">CriticalHigh</text>
+<rect x="1434.3" y="596.0" width="190.0" height="99.0" rx="0" fill="#ffffff" stroke="#6d4a9c" stroke-width="1.5"/>
+<rect x="1434.3" y="596.0" width="190.0" height="51.0" rx="0" fill="#f1eaf7" stroke="#6d4a9c" stroke-width="1.5"/>
+<text x="1529.3" y="614.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«enumeration»</text>
+<text x="1529.3" y="632.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">HardwareRevision</text>
+<line x1="1434.3" y1="647.0" x2="1624.3" y2="647.0" stroke="#6d4a9c" stroke-width="1.5"/>
+<text x="1444.3" y="666.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">RevA = 0</text>
+<text x="1444.3" y="682.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">RevB = 1</text>
+<rect x="2572.3" y="596.0" width="234.2" height="99.0" rx="0" fill="#ffffff" stroke="#6d4a9c" stroke-width="1.5"/>
+<rect x="2572.3" y="596.0" width="234.2" height="51.0" rx="0" fill="#f1eaf7" stroke="#6d4a9c" stroke-width="1.5"/>
+<text x="2689.4" y="614.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">«struct»</text>
+<text x="2689.4" y="632.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">DeviceConfig</text>
+<line x1="2572.3" y1="647.0" x2="2806.5" y2="647.0" stroke="#6d4a9c" stroke-width="1.5"/>
+<text x="2582.3" y="666.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ hwRevision: HardwareRevision</text>
+<text x="2582.3" y="682.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ serialNumber: array&lt;char, 8&gt;</text>
+<rect x="40.0" y="812.0" width="396.8" height="179.0" rx="0" fill="#ffffff" stroke="#3f8a5f" stroke-width="1.5"/>
+<rect x="40.0" y="812.0" width="396.8" height="35.0" rx="0" fill="#e0f2e9" stroke="#3f8a5f" stroke-width="1.5"/>
+<text x="238.4" y="832.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">LedIndicator</text>
+<line x1="40.0" y1="847.0" x2="436.8" y2="847.0" stroke="#3f8a5f" stroke-width="1.5"/>
+<text x="50.0" y="866.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_green: IDigitalOutput&amp;</text>
+<text x="50.0" y="882.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_yellow: IDigitalOutput&amp;</text>
+<text x="50.0" y="898.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_red: IDigitalOutput&amp;</text>
+<line x1="40.0" y1="911.0" x2="436.8" y2="911.0" stroke="#3f8a5f" stroke-width="1.5"/>
+<text x="50.0" y="930.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ LedIndicator(green: IDigitalOutput&amp;,</text>
+<text x="50.0" y="946.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       yellow: IDigitalOutput&amp;, red: IDigitalOutput&amp;)</text>
+<text x="50.0" y="962.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ turnAllOff(): void</text>
+<text x="50.0" y="978.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ update(zone: TemperatureZone): void</text>
+<rect x="526.8" y="812.0" width="425.1" height="243.0" rx="0" fill="#ffffff" stroke="#3f8a5f" stroke-width="1.5"/>
+<rect x="526.8" y="812.0" width="425.1" height="35.0" rx="0" fill="#e0f2e9" stroke="#3f8a5f" stroke-width="1.5"/>
+<text x="739.4" y="832.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">TemperatureMonitor</text>
+<line x1="526.8" y1="847.0" x2="952.0" y2="847.0" stroke="#3f8a5f" stroke-width="1.5"/>
+<text x="536.8" y="866.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_sensor: IAnalogInput&amp;</text>
+<text x="536.8" y="882.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_scaler: unique_ptr&lt;ITemperatureScaler&gt;</text>
+<text x="536.8" y="898.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_currentZone: volatile TemperatureZone</text>
+<text x="536.8" y="914.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_lastTemperatureDeciC: volatile int16_t</text>
+<line x1="526.8" y1="927.0" x2="952.0" y2="927.0" stroke="#3f8a5f" stroke-width="1.5"/>
+<text x="536.8" y="946.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ TemperatureMonitor(sensor: IAnalogInput&amp;)</text>
+<text x="536.8" y="962.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ setScaler(scaler: unique_ptr&lt;ITemperatureScaler&gt;): void</text>
+<text x="536.8" y="978.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ onSampleTick(): void</text>
+<text x="536.8" y="994.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ getZone(): TemperatureZone</text>
+<text x="536.8" y="1010.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ getTemperatureDeciCelsius(): int16_t</text>
+<text x="536.8" y="1026.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- {static} evaluateNextZone(zone,</text>
+<text x="536.8" y="1042.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       temperatureDeciC): TemperatureZone</text>
+<rect x="2529.9" y="812.0" width="319.0" height="131.0" rx="0" fill="#ffffff" stroke="#3f8a5f" stroke-width="1.5"/>
+<rect x="2529.9" y="812.0" width="319.0" height="35.0" rx="0" fill="#e0f2e9" stroke="#3f8a5f" stroke-width="1.5"/>
+<text x="2689.4" y="832.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">DeviceConfigManager</text>
+<line x1="2529.9" y1="847.0" x2="2848.9" y2="847.0" stroke="#3f8a5f" stroke-width="1.5"/>
+<text x="2539.9" y="866.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_storage: INonVolatileStorage&amp;</text>
+<line x1="2529.9" y1="879.0" x2="2848.9" y2="879.0" stroke="#3f8a5f" stroke-width="1.5"/>
+<text x="2539.9" y="898.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ DeviceConfigManager(storage:</text>
+<text x="2539.9" y="914.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       INonVolatileStorage&amp;)</text>
+<text x="2539.9" y="930.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ loadOnce(outConfig: DeviceConfig&amp;): bool</text>
+<rect x="40.0" y="1140.0" width="2823.1" height="259.0" rx="0" fill="#ffffff" stroke="#4472a8" stroke-width="1.5"/>
+<rect x="40.0" y="1140.0" width="2823.1" height="35.0" rx="0" fill="#dbe9f6" stroke="#4472a8" stroke-width="1.5"/>
+<text x="1451.5" y="1160.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">TemperatureMonitorApplication</text>
+<line x1="40.0" y1="1175.0" x2="2863.1" y2="1175.0" stroke="#4472a8" stroke-width="1.5"/>
+<text x="50.0" y="1194.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_temperatureMonitor: TemperatureMonitor&amp;</text>
+<text x="50.0" y="1210.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_ledIndicator: LedIndicator&amp;</text>
+<text x="50.0" y="1226.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_configManager: DeviceConfigManager&amp;</text>
+<text x="50.0" y="1242.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_samplingTimer: ITimer&amp;</text>
+<text x="50.0" y="1258.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">- m_boardConfig: DeviceConfig</text>
+<line x1="40.0" y1="1271.0" x2="2863.1" y2="1271.0" stroke="#4472a8" stroke-width="1.5"/>
+<text x="50.0" y="1290.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ TemperatureMonitorApplication(temperatureMonitor&amp;,</text>
+<text x="50.0" y="1306.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">       ledIndicator&amp;, configManager&amp;, samplingTimer&amp;)</text>
+<text x="50.0" y="1322.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ initialize(): bool</text>
+<text x="50.0" y="1338.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ start(): void</text>
+<text x="50.0" y="1354.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ onRealTimeTick(): void</text>
+<text x="50.0" y="1370.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ boardConfig(): const DeviceConfig&amp;</text>
+<text x="50.0" y="1386.5" font-family="Consolas, 'Courier New', monospace" font-size="11.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#111111">+ registerAsActiveInstance(): void</text>
+<polyline points="238.4,316.0 238.4,183.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-realize)"/>
+<polyline points="739.4,316.0 739.4,183.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-realize)"/>
+<polyline points="2266.2,316.0 2266.2,215.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-realize)"/>
+<polyline points="2689.4,316.0 2689.4,199.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-realize)"/>
+<polyline points="3102.0,316.0 3102.0,231.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-realize)"/>
+<polyline points="1183.8,316.0 1529.3,183.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-realize)"/>
+<polyline points="1874.8,316.0 1529.3,183.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-realize)"/>
+<polyline points="1355.7,357.5 1325.7,365.5" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-open-arrow)"/>
+<rect x="1315.1" y="350.5" width="51.2" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1340.7" y="361.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#333333">creates</text>
+<polyline points="1703.0,357.5 1733.0,365.5" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-open-arrow)"/>
+<rect x="1692.4" y="350.5" width="51.2" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1718.0" y="361.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#333333">creates</text>
+<polyline points="1529.3,399.0 1529.3,596.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-open-arrow)"/>
+<rect x="1513.4" y="486.5" width="31.8" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1529.3" y="497.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#333333">uses</text>
+<polyline points="2572.3,645.5 1624.3,645.5" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-open-arrow)"/>
+<polyline points="2689.4,812.0 2689.4,695.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-open-arrow)"/>
+<rect x="2657.3" y="742.5" width="64.1" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="2689.4" y="753.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#333333">populates</text>
+<polyline points="739.4,812.0 739.4,727.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-open-arrow)"/>
+<rect x="713.8" y="758.5" width="51.2" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="739.4" y="769.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#333333">returns</text>
+<polyline points="2533.4,389.5 2266.2,215.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<rect x="2294.6" y="203.3" width="61.4" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="2297.6" y="214.3" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">m_bus [1]</text>
+<polyline points="238.4,812.0 238.4,769.5 619.4,769.5 619.4,661.5 644.4,661.5" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-open-arrow)"/>
+<rect x="413.0" y="758.5" width="31.8" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="428.9" y="769.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="middle" font-weight="normal" font-style="italic" xml:space="preserve" fill="#333333">uses</text>
+<polyline points="40.0,901.5 15.0,901.5 15.0,141.5 128.4,141.5" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<rect x="-95.1" y="114.5" width="190.5" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="92.4" y="125.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="end" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">m_green / m_yellow / m_red [3]</text>
+<polyline points="526.8,933.5 481.8,933.5 481.8,141.5 644.4,141.5" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<rect x="531.6" y="114.5" width="79.8" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="608.4" y="125.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="end" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">m_sensor [1]</text>
+<polyline points="952.0,933.5 997.0,933.5 997.0,141.5 1352.1,141.5" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-start="url(#uml-diamond-filled)"/>
+<rect x="1276.2" y="114.5" width="42.9" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="1316.1" y="125.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="end" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">[0..1]</text>
+<polyline points="2848.9,877.5 2908.1,877.5 2908.1,149.5 2863.1,149.5" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<rect x="2896.1" y="122.5" width="86.0" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="2899.1" y="133.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">m_storage [1]</text>
+<polyline points="739.4,1140.0 739.4,1055.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<rect x="580.8" y="1056.0" width="153.6" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="731.4" y="1067.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="end" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">m_temperatureMonitor [1]</text>
+<polyline points="238.4,1140.0 238.4,991.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<rect x="116.7" y="992.0" width="116.7" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="230.4" y="1003.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="end" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">m_ledIndicator [1]</text>
+<polyline points="2689.4,1140.0 2689.4,943.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<rect x="2561.5" y="944.0" width="122.8" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="2681.4" y="955.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="end" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">m_configManager [1]</text>
+<polyline points="2863.1,1180.0 3275.9,1180.0 3275.9,165.5 3250.9,165.5" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<rect x="3283.9" y="138.5" width="122.8" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="3286.9" y="149.5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">m_samplingTimer [1]</text>
+<polyline points="2535.7,1140.0 2470.7,1140.0 2470.7,715.0 2602.3,715.0 2602.3,695.0" fill="none" stroke="#2b2b2b" stroke-width="1.3" marker-start="url(#uml-diamond-filled)"/>
+<rect x="2572.9" y="696.0" width="24.4" height="14.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.3"/>
+<text x="2594.3" y="707.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" text-anchor="end" font-weight="normal" font-style="normal" xml:space="preserve" fill="#33587a">[1]</text>
+<rect x="40.0" y="1489.0" width="3210.9" height="90.0" rx="0" fill="#fbfbfb" stroke="#999999" stroke-width="1"/>
+<text x="54.0" y="1509.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" font-weight="bold" font-style="normal" xml:space="preserve" fill="#111111">Legend</text>
+<line x1="54.0" y1="1535.0" x2="114.0" y2="1535.0" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-realize)"/>
+<text x="122.0" y="1539.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="start" font-weight="bold" font-style="normal" xml:space="preserve" fill="#33587a">realization</text>
+<text x="54.0" y="1561.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#444444">class realizes / implements an interface</text>
+<line x1="849.7" y1="1535.0" x2="909.7" y2="1535.0" stroke="#2b2b2b" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#uml-open-arrow)"/>
+<text x="917.7" y="1539.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="start" font-weight="bold" font-style="normal" xml:space="preserve" fill="#33587a">dependency</text>
+<text x="849.7" y="1561.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#444444">uses or creates, no ownership</text>
+<line x1="1645.4" y1="1535.0" x2="1705.4" y2="1535.0" stroke="#2b2b2b" stroke-width="1.3" marker-end="url(#uml-open-arrow)"/>
+<text x="1713.4" y="1539.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="start" font-weight="bold" font-style="normal" xml:space="preserve" fill="#33587a">association</text>
+<text x="1645.4" y="1561.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#444444">held by reference, injected via constructor</text>
+<line x1="2441.2" y1="1535.0" x2="2501.2" y2="1535.0" stroke="#2b2b2b" stroke-width="1.3" marker-start="url(#uml-diamond-filled)"/>
+<text x="2509.2" y="1539.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" text-anchor="start" font-weight="bold" font-style="normal" xml:space="preserve" fill="#33587a">composition</text>
+<text x="2441.2" y="1561.0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" text-anchor="start" font-weight="normal" font-style="normal" xml:space="preserve" fill="#444444">owns the part (unique_ptr, or by value)</text>
+</svg>
