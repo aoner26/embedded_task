@@ -31,13 +31,12 @@ add_library(temp_monitor_firmware STATIC
 
     src/app/TemperatureMonitorApplication.cpp
 
-    firmware/isr_vectors.cpp
-    firmware/system_init.cpp
+    
 )
 
 target_include_directories(temp_monitor_firmware PUBLIC
     include
-    firmware
+    
 )
 
 # --- PC hardware mocks -------------------------------------------------
